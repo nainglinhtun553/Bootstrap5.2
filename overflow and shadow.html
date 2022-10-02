@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>overflow and shadow exerise</title>
+	<link rel="stylesheet" href="../NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+	<!-- <div class="d-flex justify-content-center bg-dark align-items-center" style="height:200px;">
+		<div class="bg-warning">Hello</div>
+		<div class= "bg-info">Hello</div>
+		<div class="bg-success">Hello</div>
+	</div> -->
+	<!-- <div class="d-flex flex-column align-items-center bg-dark justify-content-evenly" style="height:200px;">
+		<div class="bg-warning">Hello</div>
+		<div class= "bg-info">Hello</div>
+		<div class="bg-success">Hello</div>
+	</div> -->
+
+
+	<!-- <div class="d-flex align-items-center bg-dark justify-content-evenly flex-row-reverse" style="height:200px;">
+		<div class="bg-warning">Hello</div>
+		<div class= "bg-info">Hello</div>
+		<div class="bg-success">Hello</div>
+	</div> -->
+
+	<div class="d-flex justify-content-evenly">
+			<div class="m-3 bg-light shadow w-25 m-5 p-2">
+			<h3>shadow simple</h3>
+			Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?
+
+			</div>
+
+			<div class="m-3 bg-light shadow-sm w-25 m-5 p-2">
+				<h3>shadow small</h3>
+				Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?
+			</div>
+			<div class="m-3 bg-light shadow-lg w-25 m-5 p-2">
+				<h3>shadow large</h3>
+				Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?
+			</div>
+	</div>
+	<hr>
+
+		<div class="bg-info d-flex justify-content-evenly" style="height:400px;">
+			
+				<div class="m-3 bg-light shadow-lg w-25 m-5 p-2 overflow-auto" style="height:200px;">
+						<h3> over flow auto</h3>
+							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?
+				</div>
+
+
+				<div class="m-3 bg-light shadow-lg w-25 m-5 p-2 overflow-hidden" style="height:200px;">
+						<h3> over flow hidden</h3>
+							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil??
+				</div>
+
+
+
+				<div class="m-3 bg-light shadow-lg w-25 m-5 p-2 overflow-visible" style="height:200px;">
+						<h3> over flow visible</h3>
+							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?sit
+				</div>
+
+				<div class="m-3 bg-light shadow-lg w-25 m-5 p-2 overflow-scroll" style="height:200px;">
+						<h3> over flow scroll</h3>
+							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipit officia ea culpa nihil?sit amet consectetur adipisicing, elit. Distinctio harum ipsum, sed blanditiis mollitia, recusandae alias ab magni quod esse. Tempora possimus doloribus ab, reprehenderit suscipiofficia ea culpa nihil?
+				</div>
+
+		</div>
+		<hr>
+
+		<h3 class="text-center">Opacity exerise</h3>	
+		<div class="bg-light d-flex justify-content-between" style="height:60vh;">
+
+			
+				<div class="mt-5">
+					<img src="images/paris.jpg" alt="" class="w-75 m-3 opacity-100 " style="">
+
+				</div>
+
+				<div class="mt-5">
+					<img src="images/paris.jpg" alt="" class="w-75 m-3 opacity-75 " style="">
+
+				</div>
+
+				<div class="mt-5">
+					<img src="images/paris.jpg" alt="" class="w-75 m-3 opacity-50 " style="">
+
+				</div>
+		</div>
+		<hr>
+		<h3 class="text-enter">float exerise</h3>
+		<div class="bg-light" style="height:60vh;">
+			<div class="bg-dark text-white float-start w-50">Hello World</div>
+
+			
+				
+		</div>
+
+</body>
+<script src="../NPM/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

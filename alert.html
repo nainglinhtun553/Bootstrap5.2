@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layout Exerise</title>
+	<link rel="stylesheet" href="../NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+	<div  class="alert alert-danger m-5" role="alert"> CODE LAB</div>
+	<div  class="alert alert-warning m-5" role="alert"> CODE LAB</div>
+	<div  class="alert alert-success m-5" role="alert"> CODE LAB</div>
+
+	<div id="liveAlertPlaceholder"></div>
+	<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button data-bs-dismiss="alert">Close</button>
+
+
+  <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+</div>
+	
+
+</body>
+<script src="../NPM/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../NPM/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+		const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+			const alert = (message, type) => {
+			  const wrapper = document.createElement('div')
+			  wrapper.innerHTML = [
+			    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+			    `   <div>${message}</div>`,
+			    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+			    '</div>'
+			  ].join('')
+
+			  alertPlaceholder.append(wrapper)
+			}
+
+			const alertTrigger = document.getElementById('liveAlertBtn')
+			if (alertTrigger) {
+			  alertTrigger.addEventListener('click', () => {
+			    alert('Nice, you triggered this alert message!', 'success')
+			  })
+			}
+</script>
+
+</html>
